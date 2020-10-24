@@ -1,10 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    <h1>{{ numberinput }}</h1>
-</body>
-</html>
+{% extends "layout.html" %}
+{% block content %}
+    <div style="text-align:center; font-size:300%;" class="p-5">
+        <h1>How cool is {{ numberinput }}?</h1>
+    </div>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">Result</th>
+                <th scope="col">Points</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Prime</th>
+                <td>{{ isPrime }}</td>
+                <td>50</td>
+            </tr>
+            <tr>
+        </tbody>
+    </table>
+{% endblock content %}
