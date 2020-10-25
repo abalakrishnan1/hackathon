@@ -15,9 +15,70 @@
             <tr>
                 <th scope="row">Prime</th>
                 <td>{{ isPrime }}</td>
+                {% if isPrime == 'Yes'%}
+                    <td>100</td>
+                {% else %}
+                    <td>0</td>
+                {% endif %}
+            </tr>
+            <tr>
+                <tr>
+                <th scope="row">Relation to Pi</th>
+                <td>{{ digitsOfPi }}</td>
                 <td>50</td>
             </tr>
             <tr>
+                <tr>
+                <th scope="row">Twin Prime</th>
+                <td>{{ twinprime }}</td>
+                {% if twinprime == 'Yes'%}
+                    <td>150</td>
+                {% else %}
+                    <td>0</td>
+                {% endif %}
+            </tr>
+            <tr>
+                <tr>
+                <th scope="row">Degrees per ngon</th>
+                <td>{{ ngon }}</td>
+                <td>{{ ngon }}</td>
+            </tr>
+            <tr>
+                <tr>
+                <th scope="row">Perfect Number</th>
+                <td>{{ perfect }}</td>
+                {% if perfect == 'Yes'%}
+                    <td>200</td>
+                {% else %}
+                    <td>0</td>
+                {% endif %}
+            </tr>
+            <tr>
+                <tr>
+                <th scope="row">Fibonacci Number</th>
+                <td>{{ fibi }}</td>
+                {% if fibi == 'Yes'%}
+                    <td>75</td>
+                {% else %}
+                    <td>0</td>
+                {% endif %}
+            </tr>
+            <tr>
+                <tr>
+                <th scope="row">nth Roots</th>
+                <td>{{ root }}</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <tr>
+                <th scope="row">Factorial</th>
+                <td>{{ fact }}</td>
+                {% if fact == 'Yes'%}
+                    <td>300</td>
+                {% else %}
+                    <td>0</td>
+                {% endif %}
+            </tr>
         </tbody>
     </table>
 {% endblock content %}
